@@ -25,14 +25,14 @@
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ; -- General Installer configuration
-#define MyAppVer "5.3.5.1"
-#define MyAppDisplayVer "5.3.5-1"
+#define MyAppVer "5.3.5.2"
+#define MyAppDisplayVer "5.3.5-2"
 #define MyAppName "Lua"
 #define MyAppDisplayName "Lua for Windows"
 #define MyAppPublisher "The Lua for Windows Project and Lua and Tecgraf, PUC-Rio"
 #define MyAppURL "http://github.com/rjpcomputing/luaforwindows"
 #define MyAppExeName "lua.exe"
-#define AppMinVer "5.3.5.1"
+#define AppMinVer "5.3.5.2"
 
 ; -- Dependancy handling configuration
 ;		Comment out the #define DOWNLOAD_FILES if you want to build the
@@ -94,17 +94,19 @@ Source: files\luadoc_start.bat; DestDir: {app}; Flags: ignoreversion
 Source: files\lExecutor.wlua; DestDir: {app}; Flags: ignoreversion
 Source: files\ilua.cmd; DestDir: {app}; Flags: ignoreversion
 ; -- LuaRocks files
-Source: files\luarocks.bat; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\luarocks-admin.bat; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\7z.dll; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\7z.exe; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\luarocks.lua; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\luarocks_config.lua; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\luarocks-admin.lua; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\rclauncher.o; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\rclauncher.obj; DestDir: {app}; Flags: ignoreversion; Components: luarocks
-Source: files\rocks\*; DestDir: {app}\rocks; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: .git\; Components: luarocks
-Source: files\lua\luarocks\*; DestDir: {app}\lua\luarocks; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: .git\; Components: luarocks
+Source: files\luarocks.exe; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+Source: files\luarocks-admin.exe; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\luarocks.bat; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\luarocks-admin.bat; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\7z.dll; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\7z.exe; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\luarocks.lua; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\luarocks_config.lua; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\luarocks-admin.lua; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\rclauncher.o; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\rclauncher.obj; DestDir: {app}; Flags: ignoreversion; Components: luarocks
+; Source: files\rocks\*; DestDir: {app}\rocks; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: .git\; Components: luarocks
+; Source: files\lua\luarocks\*; DestDir: {app}\lua\luarocks; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: .git\; Components: luarocks
 ; -- Other files and modules.
 Source: files\clibs\*; DestDir: {app}\clibs; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: .git\; Components: modules
 Source: files\docs\*; DestDir: {app}\docs; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: .git\; Components: docs
